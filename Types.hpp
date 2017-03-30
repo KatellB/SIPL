@@ -136,6 +136,36 @@ class float3 {
         };
 };
 
+// Matrix class
+class mat3x3 {
+    public:
+        float m11, m12, m13, m21, m22, m23, m31, m32, m33;
+        mat3x3() {
+            this->m11 = 0.0f;
+            this->m12 = 0.0f;
+            this->m13 = 0.0f;
+            this->m21 = 0.0f;
+            this->m22 = 0.0f;
+            this->m23 = 0.0f;
+            this->m31 = 0.0f;
+            this->m32 = 0.0f;
+            this->m33 = 0.0f;
+        };
+        mat3x3(float m11, float m12, float m13, float m21, float m22, float m23, float m31, float m32, float m33) {
+            this->m11 = m11;
+            this->m12 = m12;
+            this->m13 = m13;
+            this->m21 = m21;
+            this->m22 = m22;
+            this->m23 = m23;
+            this->m31 = m31;
+            this->m32 = m32;
+            this->m33 = m33;
+        };
+
+};
+
+
 // These are not for images/volumes
 class int2 {
     public:
